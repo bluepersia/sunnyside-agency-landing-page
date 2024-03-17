@@ -50,6 +50,15 @@ p {
 
 .navlist {
   display: flex;
+  align-items: center;
   list-style: none;
-  gap: 2,77em;
+  gap: 2.77em;
+}
+
+.btn {
+  padding: .75em 1.5em;
+  border:none;
+  text-align: center;
+  font-family: inherit;
+  font-size: inherit;
 }

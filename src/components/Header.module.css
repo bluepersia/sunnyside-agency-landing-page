@@ -2,11 +2,48 @@
     background: url(../images/mobile/image-header.jpg);
     background-size: cover;
     background-position: bottom center;
-
-    padding-bottom: 17.11em;
+    padding: 1.77em 1.27em;
+    padding-bottom: 11.11em;
+    position: relative;
+}
+.top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
+.title {
+    font-family: var(--font-2);
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    text-align: center;
+    margin-top: 2em;
+}
 
+.imgArrow {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.menuMobile {
+    opacity: 0%;
+    pointer-events: none;    
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+}
+
+.menuMobile.open {
+    opacity: 100%;
+    pointer-events: all;
+}
+
+.navMobile {
+    list-style: none;
+    padding-left: 0;
+}
 
 
 @media (min-width: 750px)
@@ -15,5 +52,31 @@
         background: url(../images/desktop/image-header.jpg);
         background-size: cover;
         background-position: bottom center;
+        
+        padding: 2.55em 3.125% 15em;
+    }
+    .title {
+        font-size: 2.5rem;
+    }
+
+    .imgArrow{
+    }
+
+
+
+    .navlink {
+        text-decoration: none;
+        color: white;
+        font-family: inherit;
+    }
+
+    .btnContact {
+        composes: btn from '../App.css';
+        background-color: white;
+        text-transform: uppercase;
+        border-radius: 20px;
+        font-family: var(--font-2);
+        font-weight: bold;
+        
     }
 }
