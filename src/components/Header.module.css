@@ -1,0 +1,19 @@
+.header {
+    background: url(../images/mobile/image-header.jpg);
+    background-size: cover;
+    background-position: bottom center;
+
+    padding-bottom: 17.11em;
+}
+
+
+
+
+@media (min-width: 750px)
+{
+    .header {
+        background: url(../images/desktop/image-header.jpg);
+        background-size: cover;
+        background-position: bottom center;
+    }
+}
