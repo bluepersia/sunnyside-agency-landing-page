@@ -19,40 +19,76 @@ export default function Main(): JSX.Element {
   return (
     <main className={styles.main}>
       <div className={styles.grid}>
-        <div className={styles.gridText}>
+        <div className={styles.gridText + ' ' + styles.gridText1}>
           <h2 className={styles.gridTitle}>Transform your brand</h2>
           <p className={styles.gridBody}>
             We are a full-service creative agency specializing in helping brands
             grow fast. Engage your clients through compelling visuals that do
             most of the marketing for you.
           </p>
-          <a href='#' className={styles.btnLearn}>
+          <a href='#' className={styles.btnLearn + ' ' + styles.btnLearn1}>
             Learn more
           </a>
         </div>
-        <img src={imgEggMobile} className={styles.egg + ' mobile tablet'} />
-        <img src={imgEggDesktop} className={styles.egg + ' desktop'} />
-        <img src={imgCupMobile} className={styles.cup + ' mobile tablet'} />
-        <img src={imgCupDesktop} className={styles.cup + ' desktop'} />;
-        <div className={styles.gridText}>
+        <img
+          src={imgEggMobile}
+          className={styles.imgEggMobile + ' mobile tablet'}
+        />
+        <img
+          src={imgEggDesktop}
+          className={styles.imgEggDesktop + ' desktop'}
+        />
+        <img
+          src={imgCupMobile}
+          className={styles.imgCupMobile + ' mobile tablet'}
+        />
+        <img
+          src={imgCupDesktop}
+          className={styles.imgCupDesktop + ' desktop'}
+        />
+
+        <div className={styles.gridText + ' ' + styles.gridText2}>
           <h2 className={styles.gridTitle}>Stand out to the right audience</h2>
           <p className={styles.gridBody}>
             Using a collaborative formula of designers, researchers,
             photographers, videographers, and copywriters, we’ll build and
             extend your brand in digital places.{' '}
           </p>
+          <a href='#' className={styles.btnLearn + ' ' + styles.btnLearn2}>
+            Learn more
+          </a>
         </div>
-        <div className={styles.gridText2 + ' ' + styles.gridCherries}>
-          <h2 className={styles.gridTitle2}>Graphic Design</h2>
-          <p className={styles.gridText2}>
+        <div className={styles.gridTextB + ' ' + styles.gridTextB1}>
+          <h2
+            className={
+              styles.gridTitle +
+              ' ' +
+              styles.gridTitleB +
+              ' ' +
+              styles.gridTitleB1
+            }
+          >
+            Graphic Design
+          </h2>
+          <p className={styles.gridTextB}>
             Great design makes you memorable. We deliver artwork that
             underscores your brand message and captures potential clients’
             attention.
           </p>
         </div>
-        <div className={styles.gridText2 + ' ' + styles.gridOrange}>
-          <h2 className={styles.gridTitle2}>Photography</h2>
-          <p className={styles.gridText2}>
+        <div className={styles.gridTextB + ' ' + styles.gridTextB2}>
+          <h2
+            className={
+              styles.gridTitle +
+              ' ' +
+              styles.gridTitleB +
+              ' ' +
+              styles.gridTitleB2
+            }
+          >
+            Photography
+          </h2>
+          <p className={styles.gridTextB}>
             Increase your credibility by getting the most stunning, high-quality
             photos that improve your business image.
           </p>
@@ -90,42 +126,33 @@ export default function Main(): JSX.Element {
             <p className={styles.testimonialJob}>Business Owner</p>
           </div>
         </ul>
+      </div>
 
-        <div className={styles.gallery}>
-          <img
-            src={imgMilkMobile}
-            className={styles.galleryImg + ' mobile tablet'}
-          />
-          <img
-            src={imgOrangeMobile}
-            className={styles.galleryImg + ' mobile tablet'}
-          />
-          <img
-            src={imgConeMobile}
-            className={styles.galleryImg + ' mobile tablet'}
-          />
-          <img
-            src={imgSugarMobile}
-            className={styles.galleryImg + ' mobile tablet'}
-          />
+      <div className={styles.gallery}>
+        <img
+          src={imgMilkMobile}
+          className={styles.galleryImg + ' mobile tablet'}
+        />
+        <img
+          src={imgOrangeMobile}
+          className={styles.galleryImg + ' mobile tablet'}
+        />
+        <img
+          src={imgConeMobile}
+          className={styles.galleryImg + ' mobile tablet'}
+        />
+        <img
+          src={imgSugarMobile}
+          className={styles.galleryImg + ' mobile tablet'}
+        />
 
-          <img
-            src={imgMilkDesktop}
-            className={styles.galleryImg + ' desktop'}
-          />
-          <img
-            src={imgOrangeDesktop}
-            className={styles.galleryImg + ' desktop'}
-          />
-          <img
-            src={imgConeDesktop}
-            className={styles.galleryImg + ' desktop'}
-          />
-          <img
-            src={imgSugarDesktop}
-            className={styles.galleryImg + ' desktop'}
-          />
-        </div>
+        <img src={imgMilkDesktop} className={styles.galleryImg + ' desktop'} />
+        <img
+          src={imgOrangeDesktop}
+          className={styles.galleryImg + ' desktop'}
+        />
+        <img src={imgConeDesktop} className={styles.galleryImg + ' desktop'} />
+        <img src={imgSugarDesktop} className={styles.galleryImg + ' desktop'} />
       </div>
     </main>
   );
