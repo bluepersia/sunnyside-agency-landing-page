@@ -1,0 +1,224 @@
+
+.main {
+    text-align: center;
+}
+.grid {
+    display: flex;
+    flex-direction: column;
+}
+.grid > * {
+    order: 200;
+}
+.imgEggMobile {
+    order: 0;
+}
+
+.gridText {
+    padding: 3.88em 8.8%;
+}
+
+.gridText1 {
+    order: 1;
+}
+
+.gridTitle {
+    font-family: var(--font-2);
+    font-size: 2rem;
+    color: var(--Verydarkdesaturatedblue);
+}
+
+.gridBody {
+    color: var(--Darkgrayishblue)
+}
+
+.btnLearn {
+    font-family: var(--font-2);
+    color: var(--Verydarkdesaturatedblue);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    position: relative;
+    font-weight: bolder;
+}
+
+.btnLearn::after 
+{
+    content: '';
+    width: 100%;
+    height: .5em;
+    top: .5em;
+    left: 0px;
+    position: absolute;
+    z-index: -1;
+}
+
+.btnLearn1::after
+{
+    background-color: var(--Yellow);
+
+}
+.btnLearn2::after
+{
+    background-color: var(--Softred);
+}
+
+.imgCupMobile {
+    order: 2;
+}
+
+.gridText2 {
+    order: 3;
+}
+
+.gridTextB {
+}
+
+.gridTextB1 
+{
+    order: 4;
+    background: url(../images/mobile/image-graphic-design.jpg);
+    background-size: cover;
+    padding-top: 22em;
+    color: var(--Darkdesaturatedcyan);
+    background-repeat: no-repeat;
+    padding-bottom: 3.5em;
+}
+
+.gridTextB2 {
+    order: 5;
+    background: url(../images/mobile/image-photography.jpg);
+    padding-top: 22em;
+    color: var(--Darkblue);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 3.5em;
+}
+
+.gridTitleB1 {
+    color: var(--Darkdesaturatedcyan);
+}
+
+
+.testimonials{
+    padding: 3.7em 8% 5em;
+}
+
+.testimonialsTitle {
+    font-family: var(--font-2);
+
+    color: var(--Darkgrayishblue);
+    letter-spacing: .2em;
+    text-transform: uppercase;
+    font-size: .9em;
+    padding: 3.7em 8% 5.11em;
+}
+
+.testimonialsList {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;;
+}
+
+.imgAvatar {
+    border-radius: 50%;
+    width: 74px;
+    height: 74px;
+}
+
+.testimonialBody 
+{
+    color: var(--Verydarkgrayishblue);
+}
+
+.testimonialName {
+    font-weight: bold;
+    font-family: var(--font-2);
+    font-size: 1.1rem;
+    margin-bottom: 0;
+}
+
+.testimonialJob {
+    margin-top: 0;
+    font-size: .7rem;
+    color: var(--Grayishblue);
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.galleryImg 
+{
+    width: 50%;
+    max-width: 376px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+@media (min-width: 786px)
+{   
+    .grid {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto auto auto;
+    }
+
+    .gridText {
+        text-align: left;
+    }
+    .gridText1 
+    {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+
+    .imgEggDesktop, .imgEggMobile
+    {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+        width: 100%;
+    }
+
+
+    .imgCupMobile, .imgCupDesktop
+    {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+        width: 100%;
+    }
+
+    .gridText2 {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+    }
+    
+    .gridTextB1 {
+        background: url(../images/desktop/image-graphic-design.jpg);
+        background-position: center 0;
+        background-repeat: no-repeat;
+        background-size: cover;
+        
+    }
+
+    .gridTextB2 {
+        background: url(../images/desktop/image-photography.jpg);
+        background-position: center 0;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+
+    .testimonialsList {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .galleryImg {
+        width: 25%;
+        max-width: 720px;
+    }
+}
