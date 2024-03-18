@@ -29,7 +29,7 @@ export default function Header(): JSX.Element {
             setIsMenuOpen(true);
           }}
           src={imgMenu}
-          className={styles.imgMen + ' mobile'}
+          className={styles.imgMenu + ' mobile'}
         />
         <nav className='tablet desktop'>
           <ul className='navlist'>

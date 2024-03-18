@@ -26,6 +26,15 @@
     margin-left: auto;
     margin-right: auto;
 }
+
+.imgMenu {
+    cursor: pointer;
+    transition: transform 300ms;
+}
+
+.imgMenu:hover {
+    transform: scale(1.1);
+}
 .menuMobile {
     opacity: 0%;
     pointer-events: none;    
@@ -35,7 +44,7 @@
     background-color: white;
     padding: 2.22em 28%;
     text-align: center;
-    top: 0px;
+    top: -10em;
     transition: opacity 300ms, top 300ms;
 }
 
