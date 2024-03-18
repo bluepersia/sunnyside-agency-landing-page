@@ -5,6 +5,7 @@
 --Darkdesaturatedcyan: hsl(167, 40%, 24%);
 --Darkblue: hsl(198, 62%, 26%);
 --Darkmoderatecyan: hsl(168, 34%, 41%);
+--Moderatecyan: hsl(168, 34%, 66%);
 
 --Verydarkdesaturatedblue: hsl(212, 27%, 19%);
 --Verydarkgrayishblue: hsl(213, 9%, 39%);
@@ -53,6 +54,7 @@ p {
   align-items: center;
   list-style: none;
   gap: 2.77em;
+  padding-left: 0;
 }
 
 .btn {
