@@ -32,6 +32,10 @@ body {
   min-height: 100vh;
 }
 
+img 
+{
+  display: inline-block;
+}
 p {
   line-height: 1.6;
 }
