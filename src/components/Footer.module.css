@@ -20,7 +20,13 @@
 }
 .navlink {
     text-decoration: none;
-    color: var(--Darkmoderatecyan)
+    color: var(--Darkmoderatecyan);
+    transition: color 300ms;
+}
+
+.navlink:hover 
+{
+    color: white;
 }
 
 
@@ -31,4 +37,15 @@
     padding-left: 0;
     justify-content: center;
     gap: 2em;
+}
+
+.imgSocial {
+    cursor: pointer;
+}
+
+.imgSocial path {
+    transition: fill 300ms;
+}
+.imgSocial:hover path {
+    fill: white;
 }

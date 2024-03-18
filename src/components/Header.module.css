@@ -59,16 +59,26 @@
 }
 .btnContact {
     composes: btn from '../App.css';
-    background-color: white;
+    background-color: rgba(255,255,255,100%);
     text-transform: uppercase;
     border-radius: 20px;
     font-family: var(--font-2);
     font-weight: bold;
+    transition: background-color 300ms;
     
+}
+
+.btnContact:hover 
+{
+    background-color: rgba(255,255,255,50%);
 }
 
 .btnContactMobile {
     composes: btn from '../App.css';
+    background-color: var(--Yellow);
+}
+.btnContactMobile:hover {
+    filter:brightness(120%);
     background-color: var(--Yellow);
 }
 
