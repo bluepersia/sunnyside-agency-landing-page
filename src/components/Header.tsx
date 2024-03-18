@@ -59,7 +59,9 @@ export default function Header(): JSX.Element {
       <img src={imgArrow} className={styles.imgArrow} />
 
       <nav
-        className={styles.menuMobile + '  ' + (isMenuOpen ? styles.open : '')}
+        className={
+          styles.menuMobile + ' mobile ' + (isMenuOpen ? styles.open : '')
+        }
       >
         <ul className={styles.navMobile}>
           <li>

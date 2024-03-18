@@ -33,9 +33,14 @@
     left: 50%;
     transform: translateX(-50%);
     background-color: white;
+    padding: 2.22em 28%;
+    text-align: center;
+    top: 0px;
+    transition: opacity 300ms, top 300ms;
 }
 
 .menuMobile.open {
+    top: 6em;
     opacity: 100%;
     pointer-events: all;
 }
@@ -43,6 +48,28 @@
 .navMobile {
     list-style: none;
     padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.navlinkMobile {
+    text-decoration: none;
+    color: var(--Darkgrayishblue);
+}
+.btnContact {
+    composes: btn from '../App.css';
+    background-color: white;
+    text-transform: uppercase;
+    border-radius: 20px;
+    font-family: var(--font-2);
+    font-weight: bold;
+    
+}
+
+.btnContactMobile {
+    composes: btn from '../App.css';
+    background-color: var(--Yellow);
 }
 
 
@@ -70,13 +97,5 @@
         font-family: inherit;
     }
 
-    .btnContact {
-        composes: btn from '../App.css';
-        background-color: white;
-        text-transform: uppercase;
-        border-radius: 20px;
-        font-family: var(--font-2);
-        font-weight: bold;
-        
-    }
+    
 }

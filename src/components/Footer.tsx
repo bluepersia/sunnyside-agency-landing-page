@@ -1,5 +1,4 @@
 import styles from './Footer.module.css';
-import imgLogo from '../images/logo.svg';
 import imgFacebook from '../images/icon-facebook.svg';
 import imgInsta from '../images/icon-instagram.svg';
 import imgTwitter from '../images/icon-twitter.svg';
